@@ -1,10 +1,10 @@
 import React from "react";
-
 // components
 
 import Navbar from "components/Navbars/AuthNavbar.js";
 import Footer from "components/Footers/Footer.js";
-
+import Keds from "../assets/img/keds.webp";
+console.log(Keds);
 export default function Landing() {
   return (
     <>
@@ -31,7 +31,7 @@ export default function Landing() {
                     Begin your journey with us.
                   </h1>
                   <p className="mt-4 text-xl text-blueGray-200">
-                    GreenFin is the ultimate tool to collect useful data and make
+                    Jigi is the ultimate tool to collect useful data and make
                     information accessible. With us investing becomes easy as
                     pie.
                   </p>
@@ -108,19 +108,39 @@ export default function Landing() {
                 </div>
               </div>
             </div>
-
-            
           </div>
         </section>
-
-        
+        <section className="pt-20 pb-48">
+          <img
+            alt="..."
+            src={Keds}
+            className="shadow-lg rounded-full mx-auto max-w-200-px"
+          />
+          <div className="flex flex-wrap justify-center text-center mb-24">
+            <div className="w-full lg:w-6/12 px-4">
+              <p className="text-lg leading-relaxed m-4 text-blueGray-500">
+                Creating a wallet is easier than tying shoelaces
+              </p>
+              <h6 className="text-xl font-semibold">
+                All you need is a phone number
+              </h6>
+              <br></br>
+              <button
+                className="grow bg-orange text-blueGray-700 active:bg-blueGray-50 text-xl font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"
+                type="button"
+              >
+                Create wallet
+              </button>
+            </div>
+          </div>
+        </section>
         <section className="pt-20 pb-48">
           <div className="container mx-auto px-4">
             <div className="flex flex-wrap justify-center text-center mb-24">
               <div className="w-full lg:w-6/12 px-4">
                 <h2 className="text-4xl font-semibold">Here are our heroes</h2>
                 <p className="text-lg leading-relaxed m-4 text-blueGray-500">
-                  Meet the members of The Outliers team.
+                  Meet the members of The Jigi team.
                 </p>
               </div>
             </div>
@@ -129,13 +149,11 @@ export default function Landing() {
                 <div className="px-6">
                   <img
                     alt="..."
-                    src={
-                      "https://media-exp1.licdn.com/dms/image/C4D03AQG8vzB7XD-N9w/profile-displayphoto-shrink_200_200/0/1595400928923?e=1648684800&v=beta&t=0NuEhwdKInypyS1Oj5rx2SRX2h7GR6CO5Qsc-UPfC_g"
-                    }
+                    src={""}
                     className="shadow-lg rounded-full mx-auto max-w-120-px"
                   />
                   <div className="pt-6 text-center">
-                    <h5 className="text-xl font-bold">Arman Zhumakhan</h5>
+                    <h5 className="text-xl font-bold">Agzhan Batyrbek</h5>
                     <p className="mt-1 text-sm text-blueGray-400 uppercase font-semibold">
                       Team Leader
                     </p>
@@ -172,7 +190,7 @@ export default function Landing() {
                     className="shadow-lg rounded-full mx-auto max-w-120-px"
                   />
                   <div className="pt-6 text-center">
-                    <h5 className="text-xl font-bold">Adilzhan Narik</h5>
+                    <h5 className="text-xl font-bold">Arman Zhumakhan</h5>
                     <p className="mt-1 text-sm text-blueGray-400 uppercase font-semibold">
                       Developer
                     </p>
@@ -203,7 +221,7 @@ export default function Landing() {
                     className="shadow-lg rounded-full mx-auto max-w-120-px"
                   />
                   <div className="pt-6 text-center">
-                    <h5 className="text-xl font-bold">Ralif Rakhmatullin</h5>
+                    <h5 className="text-xl font-bold">Ali Baurzhan</h5>
                     <p className="mt-1 text-sm text-blueGray-400 uppercase font-semibold">
                       Developer
                     </p>
@@ -238,54 +256,11 @@ export default function Landing() {
                     className="shadow-lg rounded-full mx-auto max-w-120-px"
                   />
                   <div className="pt-6 text-center">
-                    <h5 className="text-xl font-bold">Nurgazy Salanov</h5>
+                    <h5 className="text-xl font-bold">Mustafa Abylkhanuly</h5>
                     <p className="mt-1 text-sm text-blueGray-400 uppercase font-semibold">
                       Developer
                     </p>
                     <div className="mt-6">
-                      <button
-                        className="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
-                      >
-                        <i className="fab fa-google"></i>
-                      </button>
-                      <button
-                        className="bg-lightBlue-400 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
-                      >
-                        <i className="fab fa-twitter"></i>
-                      </button>
-                      <button
-                        className="bg-blueGray-700 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
-                      >
-                        <i className="fab fa-instagram"></i>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="w-full md:w-6/12 lg:w-1/5 lg:mb-0 mb-12 px-4">
-                <div className="px-6">
-                  <img
-                    alt="..."
-                    src={
-                      "https://media-exp1.licdn.com/dms/image/C4D03AQHQWxxk8YKkXg/profile-displayphoto-shrink_200_200/0/1627466504251?e=1648684800&v=beta&t=06peIjV6MOdrpam0kJ4587lfDpWJR0rmCHJkZlLvI68"
-                    }
-                    className="shadow-lg rounded-full mx-auto max-w-120-px"
-                  />
-                  <div className="pt-6 text-center">
-                    <h5 className="text-xl font-bold">Daulet Igazin</h5>
-                    <p className="mt-1 text-sm text-blueGray-400 uppercase font-semibold">
-                      Developer
-                    </p>
-                    <div className="mt-6">
-                      <button
-                        className="bg-pink-500 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
-                        type="button"
-                      >
-                        <i className="fab fa-dribbble"></i>
-                      </button>
                       <button
                         className="bg-red-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
                         type="button"

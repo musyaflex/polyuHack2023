@@ -142,8 +142,7 @@ export default function Sidebar() {
                   <i
                     className={
                       "fas fa-inbox mr-2 text-sm " +
-                      (window.location.href.indexOf("/admin/inbox") !==
-                      -1
+                      (window.location.href.indexOf("/admin/inbox") !== -1
                         ? "opacity-75"
                         : "text-blueGray-300")
                     }
@@ -170,7 +169,7 @@ export default function Sidebar() {
                         : "text-blueGray-300")
                     }
                   ></i>{" "}
-                  Upload
+                  Transfers
                 </Link>
               </li>
 
@@ -230,7 +229,8 @@ export default function Sidebar() {
                   <i
                     className={
                       "fas fa-money-bill mr-2 text-sm " +
-                      (window.location.href.indexOf("/admin/greenbondlist") !== -1
+                      (window.location.href.indexOf("/admin/greenbondlist") !==
+                      -1
                         ? "opacity-75"
                         : "text-blueGray-300")
                     }

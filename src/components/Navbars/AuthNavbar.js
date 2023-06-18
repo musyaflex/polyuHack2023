@@ -17,7 +17,7 @@ export default function Navbar(props) {
               className="text-white text-xl font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase"
               to="/admin/dashboard"
             >
-            GreenFin
+              Jigi
             </Link>
             <button
               className="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
@@ -48,14 +48,10 @@ export default function Navbar(props) {
             </ul>
             <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
               <li className="lg:text-white lg:hover:text-blueGray-200 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold">
-                <Link to='/admin/general'>
-                  For Investors
-                </Link>
+                <Link to="/admin/general">For Investors</Link>
               </li>
               <li className="lg:text-white lg:hover:text-blueGray-200 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold">
-                <Link to='/admin/settings'>
-                  For Companies
-                </Link>
+                <Link to="/admin/settings">For Companies</Link>
               </li>
               <li className="flex items-center">
                 <PagesDropdown />
@@ -87,7 +83,9 @@ export default function Navbar(props) {
                   className="grow bg-white text-blueGray-700 active:bg-blueGray-50 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"
                   type="button"
                 >
-                  <Link className="fas fa-check p-1" to='/auth/login'>{" Join"}</Link> 
+                  <Link className="fas fa-check p-1" to="/auth/login">
+                    {" Join"}
+                  </Link>
                 </button>
               </li>
             </ul>

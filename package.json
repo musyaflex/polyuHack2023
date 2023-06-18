@@ -32,7 +32,8 @@
     "react-scripts": "^5.0.1",
     "react-sticky": "^6.0.3",
     "tachyons": "^4.12.0",
-    "tailwindcss": "^2.2.19"
+    "tailwindcss": "^2.2.19",
+    "tw-elements": "^1.0.0-beta2"
   },
   "scripts": {
     "start": "react-scripts start",
