@@ -73,7 +73,7 @@ export default class MyCardSettings extends React.Component {
           openBackdrop4: false,
         });
       }.bind(this),
-      5000
+      15000
     );
   }
   handleTransfer(event) {
@@ -385,10 +385,14 @@ export default class MyCardSettings extends React.Component {
                   </div>
                   <br></br>
                   <div className="flex items-center justify-center">
-                    <h1 style={{ fontSize: "1.5rem" }}>Transaction Pending</h1>
-                    <h1 style={{ fontSize: "1.5rem" }}>
-                      Estimated transfer time: 25 hours 25 minutes
-                    </h1>
+                    <div className="text-center">
+                      <h1 style={{ fontSize: "1.5rem" }}>
+                        Transaction Pending
+                      </h1>
+                      <h1 style={{ fontSize: "1.5rem" }}>
+                        Estimated transfer time: 25 hours 25 minutes
+                      </h1>
+                    </div>
                   </div>
                 </div>
               ) : (
