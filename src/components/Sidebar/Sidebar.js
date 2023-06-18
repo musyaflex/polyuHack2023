@@ -24,7 +24,7 @@ export default function Sidebar() {
             className="md:block text-left md:pb-2 text-blueGray-600 mr-0 inline-block whitespace-nowrap text-xl uppercase font-bold p-4 px-0"
             to="/"
           >
-            GreenFin
+            JIGI
           </Link>
           {/* User */}
           <ul className="md:hidden items-center flex flex-wrap list-none">
@@ -106,7 +106,7 @@ export default function Sidebar() {
                 </Link>
               </li>
 
-              <li className="items-center">
+              {/* <li className="items-center">
                 <Link
                   className={
                     "text-xs uppercase py-3 font-bold block " +
@@ -127,9 +127,9 @@ export default function Sidebar() {
                   ></i>{" "}
                   Company Page
                 </Link>
-              </li>
+              </li> */}
 
-              <li className="items-center">
+              {/* <li className="items-center">
                 <Link
                   className={
                     "text-xs uppercase py-3 font-bold block " +
@@ -149,7 +149,7 @@ export default function Sidebar() {
                   ></i>{" "}
                   Inbox
                 </Link>
-              </li>
+              </li> */}
 
               <li className="items-center">
                 <Link
@@ -173,7 +173,7 @@ export default function Sidebar() {
                 </Link>
               </li>
 
-              <li className="items-center">
+              {/* <li className="items-center">
                 <Link
                   className={
                     "text-xs uppercase py-3 font-bold block " +
@@ -193,7 +193,7 @@ export default function Sidebar() {
                   ></i>{" "}
                   Charity
                 </Link>
-              </li>
+              </li> */}
 
               <li className="items-center">
                 <Link
@@ -235,7 +235,7 @@ export default function Sidebar() {
                         : "text-blueGray-300")
                     }
                   ></i>{" "}
-                  Green Bonds
+                  Bonds
                 </Link>
               </li>
             </ul>

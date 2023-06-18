@@ -79,6 +79,15 @@ Finally run the server
 $ npm start
 ```
 
+To see the main account page click on JIGI icon which is located top left corner on the landing page
+
+On the left side you can see the side. Here, click on the Transfers.
+
+Transfers page is designed to make the money transfer. By typing the mobile phone number you can find the bank accound of reciever.
+It contains name of the reciever, money amount and deadline to money transfer. Then you can see two button which are for immediate transfering and pending transfer.
+
+Pending transfer means that money will be transfered when fee is lower at the stated period before the deadline
+
 ## Input and Expected Output
 
 - For creating new user account: username, first name, last name, phone number are required. API can be tested using new_user_test.py file. Inputs will be recorded in the user_info.db database
