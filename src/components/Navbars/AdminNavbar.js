@@ -3,11 +3,11 @@ import React from "react";
 import UserDropdown from "components/Dropdowns/UserDropdown.js";
 
 export default function Navbar() {
-
-  let url = window?.location?.href?.split('/');
+  let url = window?.location?.href?.split("/");
   let pageName = url[url.length - 1];
-  if (pageName === 'company_page') pageName = "Company Overview"
-  if (pageName === 'investment_page') pageName = "Investment"
+  if (pageName === "company_page") pageName = "Company Overview";
+  if (pageName === "investment_page") pageName = "Investment";
+  if (pageName === "upload") pageName = "Transfers";
 
   return (
     <>

@@ -17,7 +17,7 @@ import MyDashboard from "views/admin/MyDashboard";
 import GreenBond from "views/admin/GreenBond.js";
 import Inbox from "views/admin/Inbox";
 import Investment from "views/admin/Investment";
-import GreenBondList from "views/admin/GreenBondList" // added link for the greenbond table
+import GreenBondList from "views/admin/GreenBondList"; // added link for the greenbond table
 import InvestmentDetails from "views/admin/InvestmentDetails";
 
 class Admin extends React.Component {
@@ -25,12 +25,12 @@ class Admin extends React.Component {
     return (
       <>
         <Sidebar />
-        <div className="relative md:ml-64 bg-blueGray-100 min-h-screen" >
+        <div className="relative md:ml-64 bg-blueGray-100 min-h-screen">
           <AdminNavbar />
           {/* Header */}
           <HeaderStats />
-          <div className="px-4 md:px-10 mx-auto w-full -m-24" >
-            <Switch >
+          <div className="px-4 md:px-10 mx-auto w-full -m-24">
+            <Switch>
               <Route path="/admin/upload" exact component={Upload} />
               <Route path="/admin/charity" exact component={Charity} />
               <Route path="/admin/company_page" exact component={CompanyPage} />
@@ -38,11 +38,19 @@ class Admin extends React.Component {
               <Route path="/admin/inbox" exact component={Inbox} />
               <Route path="/admin/greenbond" exact component={GreenBond} />
               <Route path="/admin/investment" exact component={Investment} />
-              <Route path="/admin/greenbondlist" exact component={GreenBondList} />
-              <Route path="/admin/investment_page" exact component={InvestmentDetails} />
+              <Route
+                path="/admin/greenbondlist"
+                exact
+                component={GreenBondList}
+              />
+              <Route
+                path="/admin/investment_page"
+                exact
+                component={InvestmentDetails}
+              />
               <Redirect from="/admin" to="/admin/dashboard" />
             </Switch>
-            <FooterAdmin/>
+            <FooterAdmin />
           </div>
         </div>
       </>
