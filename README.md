@@ -9,6 +9,7 @@
 - Arman ZHUMAKHAN
 - Agzhan Batyrbek
 - Ali Bauyrzhan
+- Mustafa Abylkhanuly
 
 ## Technical implementation:
 
